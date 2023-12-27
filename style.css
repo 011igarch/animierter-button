@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins&display=swap');
-
+:root{
+  --button-color: #e82a2a;
+  --button-color-active: #971b1b;
+}
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +21,8 @@ body {
 .button {
   position: relative;
   padding: 10px 12px;
-  background: #7d2ae8;
-  /* background: #000; */
+  background: var(--button-color);
+  /* background: #000; */ 
   border-radius: 6px;
   color: #fff;
   border: none;
@@ -31,7 +34,7 @@ body {
 
 .button:active {
   transform: scale(0.96);
-  background: #6021b3;
+  background: var(--button-color-active);
 }
 
 .button::before,
@@ -48,14 +51,14 @@ body {
 
 .button.animate::before {
   top: -70%;
-  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
-                    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
-                    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-                    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-image: radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 20%, var(--button-color) 20%, transparent 30%),
+                    radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+                    radial-gradient(circle, transparent 10%, var(--button-color) 15%, transparent 20%),
+                    radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+                    radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+                    radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+                    radial-gradient(circle, var(--button-color) 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 20%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 18% 18%;
   background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%,70% 90%;
   animation: topBubbles .6s ease-in-out forwards;
@@ -73,13 +76,13 @@ body {
 
 .button.animate::after {
   bottom: -70%;
-  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-  radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
-  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-  radial-gradient(circle, #7d2ae8 20%, transparent 20%),
-  radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-image: radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+  radial-gradient(circle, transparent 10%, var(--button-color) 15%, transparent 20%),
+  radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+  radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+  radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+  radial-gradient(circle, var(--button-color) 20%, transparent 20%),
+  radial-gradient(circle, var(--button-color) 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
   background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%, 70% 0%;                  
   animation: bottomBubbles .6s ease-in-out forwards;
