@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@200;300;400;500;600;700;800;900&family=Poppins&display=swap');
 :root{
-  --button-color: #e82a2a;
-  --button-color-active: #971b1b;
+  --button-color: #7d2ae8;
+  --button-color-active: #6021b3;
 }
 * {
   margin: 0;
